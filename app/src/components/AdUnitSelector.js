@@ -67,13 +67,17 @@ const AdUnitSelector = ({
     <Grid>
       <Grid.Row>
         <Grid.Col xs={12} sm={12} md={12} lg={12}>
-          <Typography variant="header3" margin={{ top: 'lg', bottom: 'none' }}>
-            Connect an Ad Unit to
-          </Typography>
-          <Typography variant="header3" margin={{ top: 'none' }}>
-            <em>
-              {layoutname} : {layouttemplate}
+          <Typography
+            variant="header3"
+            margin={{ top: 'lg', bottom: 'none', left: 'md' }}
+          >
+            Context:&nbsp;
+            <em className="contextPath">
+              {layoutname} / {layouttemplate}
             </em>
+          </Typography>
+          <Typography variant="header3" margin={{ top: 'xs', left: 'md' }}>
+            Connect an Ad Unit:
           </Typography>
         </Grid.Col>
       </Grid.Row>

@@ -65,33 +65,51 @@ const AdUnitConfigurator = ({ layoutname, layouttemplate, adunitname }) => {
     <Grid>
       <Grid.Row>
         <Grid.Col xs={12} sm={12} md={12} lg={12}>
-          <Typography variant="header3" margin={{ top: 'lg' }}>
+          <Typography
+            variant="header3"
+            margin={{ top: 'lg', bottom: 'none', left: 'md' }}
+          >
+            Context:{' '}
+            <em>
+              {layoutname} / {layouttemplate}
+            </em>
+          </Typography>
+          <Typography variant="header3" margin={{ top: 'xs', left: 'md' }}>
             Ad Unit: <em>{adunitname}</em>
           </Typography>
           <Box className="adUnitBox">
             <Box.Title>
-              <Group align="end" gap="smd">
-                <Button size="sm" tertiary icon={IconCornerRightUp}>
-                  Copy to Production
-                </Button>
-                <Button size="sm" tertiary icon={IconDuplicate}>
-                  Clone & Edit
-                </Button>
-                <Button size="sm" tertiary icon={IconTrash}>
-                  Delete
-                </Button>
+              <Group align="space-between">
+                <Group.Item>Ad Unit</Group.Item>
+                <Group align="end" gap="smd">
+                  <Button size="sm" tertiary icon={IconCornerRightUp}>
+                    Copy to Production
+                  </Button>
+                  <Button size="sm" tertiary icon={IconDuplicate}>
+                    Clone & Edit
+                  </Button>
+                  <Button size="sm" tertiary icon={IconTrash}>
+                    Delete
+                  </Button>
+                </Group>
               </Group>
             </Box.Title>
             <Box.Content padding={{ all: 'none' }}>
               <Table fullWidth border="horizontal">
                 <Table.Head>
                   <Table.Row>
-                    <Table.Cell scope="col">Location</Table.Cell>
+                    <Table.Cell scope="col" padding={{ left: 'mlg' }}>
+                      Location
+                    </Table.Cell>
                     <Table.Cell scope="col">Sizes</Table.Cell>
                     <Table.Cell scope="col" align="center">
                       Active
                     </Table.Cell>
-                    <Table.Cell scope="col" align="right">
+                    <Table.Cell
+                      scope="col"
+                      align="right"
+                      padding={{ right: 'lg' }}
+                    >
                       Modify
                     </Table.Cell>
                   </Table.Row>
@@ -99,7 +117,9 @@ const AdUnitConfigurator = ({ layoutname, layouttemplate, adunitname }) => {
                 <Table.Body>
                   {adslots.map((adslot) => (
                     <Table.Row key={adslot}>
-                      <Table.Cell>{adslot}</Table.Cell>
+                      <Table.Cell padding={{ left: 'mlg' }}>
+                        {adslot}
+                      </Table.Cell>
                       <Table.Cell>
                         <Group gap="xs">
                           {randomizeAdSize().map((adsize) => (
@@ -110,7 +130,7 @@ const AdUnitConfigurator = ({ layoutname, layouttemplate, adunitname }) => {
                       <Table.Cell align="center">
                         <Switch id="switch1" defaultChecked />
                       </Table.Cell>
-                      <Table.Cell align="right">
+                      <Table.Cell align="right" padding={{ right: 'mlg' }}>
                         <Group gap="xs" wrap={false} align="end">
                           <Button tertiary icon={IconEdit} />
                           <Button tertiary icon={IconCopy} />

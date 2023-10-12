@@ -157,28 +157,6 @@ const Wireframe = () => {
                 </Tabs>
               </Grid.Col>
             </Grid.Row>
-            <Grid.Row>
-              <Grid.Col xs={12} sm={12} md={12} lg={12}>
-                <Typography
-                  variant="label2"
-                  margin={{ bottom: 'xs', top: 'md', left: 'md' }}
-                >
-                  Context:
-                </Typography>
-                <Typography
-                  variant="header4"
-                  margin={{ top: 'none', bottom: 'md', left: 'md' }}
-                >
-                  {` ${
-                    tiersdata.products.find((product) => {
-                      return product.id === tab;
-                    })?.name
-                  }${selectedT1 ? ' / ' + selectedT1 : ''}${
-                    selectedT2 ? ' / ' + selectedT2 : ''
-                  }${selectedT3 ? ' / ' + selectedT3 : ''}`}
-                </Typography>
-              </Grid.Col>
-            </Grid.Row>
             <Grid.Row className="tiersColumns">
               <Grid.Col xs={12} sm={4} md={4} lg={4}>
                 <Box margin={{ bottom: 'lg' }}>
@@ -242,6 +220,28 @@ const Wireframe = () => {
                     </List>
                   </Box.Content>
                 </Box>
+              </Grid.Col>
+            </Grid.Row>
+            <Grid.Row>
+              <Grid.Col xs={12} sm={12} md={12} lg={12}>
+                <Typography
+                  variant="label2"
+                  margin={{ bottom: 'xs', top: 'xs', left: 'md' }}
+                >
+                  Path:
+                </Typography>
+                <Typography
+                  variant="header4"
+                  margin={{ top: 'none', bottom: 'md', left: 'md' }}
+                >
+                  {` ${
+                    tiersdata.products.find((product) => {
+                      return product.id === tab;
+                    })?.name
+                  }${selectedT1 ? ' / ' + selectedT1 : ''}${
+                    selectedT2 ? ' / ' + selectedT2 : ''
+                  }${selectedT3 ? ' / ' + selectedT3 : ''}`}
+                </Typography>
               </Grid.Col>
             </Grid.Row>
             <Grid.Row>

@@ -75,6 +75,10 @@ code {
   padding-left: calc(var(--st-spacer-mlg) + var(--st-spacer-xs));
 }
 
+.contextPath {
+  white-space: nowrap;
+}
+
 .adUnitBox table {
   border: 0;
 }
