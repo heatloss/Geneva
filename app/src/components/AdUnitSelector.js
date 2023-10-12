@@ -66,7 +66,7 @@ const AdUnitSelector = ({
   return (
     <Grid>
       <Grid.Row>
-        <Grid.Col xs={12} sm={9} md={9} lg={9}>
+        <Grid.Col xs={12} sm={12} md={12} lg={12}>
           <Typography variant="header3" margin={{ top: 'lg', bottom: 'none' }}>
             Connect an Ad Unit to
           </Typography>
@@ -78,7 +78,7 @@ const AdUnitSelector = ({
         </Grid.Col>
       </Grid.Row>
       <Grid.Row>
-        <Grid.Col xs={12} sm={9} md={9} lg={9}>
+        <Grid.Col xs={12} sm={12} md={12} lg={12}>
           <Input
             placeholder="Filter ad units"
             className="adUnitParser"
@@ -88,7 +88,7 @@ const AdUnitSelector = ({
         </Grid.Col>
       </Grid.Row>
       <Grid.Row className="layersColumns">
-        <Grid.Col xs={12} sm={3} md={3} lg={3}>
+        <Grid.Col xs={12} sm={4} md={4} lg={4}>
           <Box margin={{ bottom: 'lg' }}>
             <Box.Title>Level 1</Box.Title>
             <Box.Content className="selfScroll">
@@ -107,7 +107,7 @@ const AdUnitSelector = ({
             </Box.Content>
           </Box>
         </Grid.Col>
-        <Grid.Col xs={12} sm={3} md={3} lg={3}>
+        <Grid.Col xs={12} sm={4} md={4} lg={4}>
           <Box>
             <Box.Title>Level 2</Box.Title>
             <Box.Content className="selfScroll">
@@ -126,7 +126,7 @@ const AdUnitSelector = ({
             </Box.Content>
           </Box>
         </Grid.Col>
-        <Grid.Col xs={12} sm={3} md={3} lg={3}>
+        <Grid.Col xs={12} sm={4} md={4} lg={4}>
           <Box>
             <Box.Title>Level 3</Box.Title>
             <Box.Content className="selfScroll">
@@ -147,7 +147,7 @@ const AdUnitSelector = ({
         </Grid.Col>
       </Grid.Row>
       <Grid.Row>
-        <Grid.Col xs={12} sm={9} md={9} lg={9}>
+        <Grid.Col xs={12} sm={12} md={12} lg={12}>
           <Button
             primary
             icon={IconThumbsUp}

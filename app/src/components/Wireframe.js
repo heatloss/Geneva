@@ -108,7 +108,7 @@ const Wireframe = () => {
               </Grid.Col>
             </Grid.Row>
             <Grid.Row>
-              <Grid.Col xs={12} sm={9} md={9} lg={9}>
+              <Grid.Col xs={12} sm={12} md={12} lg={12}>
                 <Group fullWidth gap="sm" margin={{ bottom: 'lg' }}>
                   <Group.Item grow={1} className="urlParserGroup">
                     <svg
@@ -138,7 +138,7 @@ const Wireframe = () => {
               </Grid.Col>
             </Grid.Row>
             <Grid.Row>
-              <Grid.Col xs={12} sm={9} md={9} lg={9}>
+              <Grid.Col xs={12} sm={12} md={12} lg={12}>
                 <Tabs
                   role="tablist"
                   onChange={handleTab}
@@ -180,7 +180,7 @@ const Wireframe = () => {
               </Grid.Col>
             </Grid.Row>
             <Grid.Row className="tiersColumns">
-              <Grid.Col xs={12} sm={3} md={3} lg={3}>
+              <Grid.Col xs={12} sm={4} md={4} lg={4}>
                 <Box margin={{ bottom: 'lg' }}>
                   <Box.Title>Tier 1</Box.Title>
                   <Box.Content className="selfScroll">
@@ -201,7 +201,7 @@ const Wireframe = () => {
                   </Box.Content>
                 </Box>
               </Grid.Col>
-              <Grid.Col xs={12} sm={3} md={3} lg={3}>
+              <Grid.Col xs={12} sm={4} md={4} lg={4}>
                 <Box>
                   <Box.Title>Tier 2</Box.Title>
                   <Box.Content className="selfScroll">
@@ -222,7 +222,7 @@ const Wireframe = () => {
                   </Box.Content>
                 </Box>
               </Grid.Col>
-              <Grid.Col xs={12} sm={3} md={3} lg={3}>
+              <Grid.Col xs={12} sm={4} md={4} lg={4}>
                 <Box>
                   <Box.Title>Tier 3</Box.Title>
                   <Box.Content className="selfScroll">
@@ -245,7 +245,7 @@ const Wireframe = () => {
               </Grid.Col>
             </Grid.Row>
             <Grid.Row>
-              <Grid.Col xs={12} sm={9} md={9} lg={9}>
+              <Grid.Col xs={12} sm={12} md={12} lg={12}>
                 <Typography
                   variant="label2"
                   margin={{ bottom: 'sm', horizontal: 'md' }}

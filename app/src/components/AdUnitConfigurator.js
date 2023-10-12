@@ -64,7 +64,7 @@ const AdUnitConfigurator = ({ layoutname, layouttemplate, adunitname }) => {
   return (
     <Grid>
       <Grid.Row>
-        <Grid.Col xs={12} sm={9} md={9} lg={9}>
+        <Grid.Col xs={12} sm={12} md={12} lg={12}>
           <Typography variant="header3" margin={{ top: 'lg' }}>
             Ad Unit: <em>{adunitname}</em>
           </Typography>
@@ -111,7 +111,7 @@ const AdUnitConfigurator = ({ layoutname, layouttemplate, adunitname }) => {
                         <Switch id="switch1" defaultChecked />
                       </Table.Cell>
                       <Table.Cell align="right">
-                        <Group gap="xs" wrap={false}>
+                        <Group gap="xs" wrap={false} align="end">
                           <Button tertiary icon={IconEdit} />
                           <Button tertiary icon={IconCopy} />
                           <Button tertiary icon={IconTrash} />
